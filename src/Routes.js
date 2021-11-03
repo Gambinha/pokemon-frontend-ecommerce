@@ -11,11 +11,11 @@ function Routes() {
         <BrowserRouter>
             <Switch>
                 <CartProvider>
-                    <Route path='/' exact component={Catalogo} />
+                    <Route path='/' exact component={Login} />
+
+                    <Route path='/catalogo' component={Catalogo} />
                     <Route path='/pokemon/:id'component={Pokemon} />
                     <Route path='/cart' component={Cart} />
-
-                    <Route path='/login' component={Login} />
                 </CartProvider>
 
 

@@ -55,10 +55,10 @@ function Cadastro() {
         }
 
         api.post('/usuario', {
-            name,
+            nome: name,
             email: emailCadastro,
-            password: senhaCadastro1
-        }).then(() => {
+            senha: senhaCadastro1
+        }).then((response) => {
             alert('Relizado com sucesso');
 
             if(span_cadastro.current) {
@@ -89,9 +89,10 @@ function Cadastro() {
 
         api.get(`/usuario/${emailLogin}/${senhaLogin}`, {
         }).then((response) => {
-            const id = response.data.id;
+            const id = response.data;
             localStorage.setItem('x-access-token', id);
-            history.push('/');
+
+            history.push('/catalogo');
             return;
         }).catch((error) => {
             console.error(error);

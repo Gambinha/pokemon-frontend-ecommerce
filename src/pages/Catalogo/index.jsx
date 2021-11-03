@@ -26,9 +26,6 @@ function Catalogo() {
         setPokemons(response.data);
         setFilteredPokemons(response.data);
     })
-
-    // setPokemons(data.pokemons);
-    // setFilteredPokemons(data.pokemons);
   }, []);
 
   useEffect(() => {

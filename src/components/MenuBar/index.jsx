@@ -11,12 +11,13 @@ function MenuBar() {
 
     useEffect(() => {
         const user_id = localStorage.getItem('x-access-token');
+        console.log(user_id);
         if(user_id) {
             api.get(`/usuario/${user_id}`, {
 
             }).then((response) => {
-            console.log(response.data);
-            setUserData(response.data);
+            console.log(response.data.nome);
+            setUserData(response.data.nome);
         })
         }
         else {
@@ -38,7 +39,7 @@ function MenuBar() {
                     <AiOutlineShoppingCart id="carrinho" color="black" size="40" />
                 </Link>
 
-                <span>Nome do Usuário</span>
+                <span>{userData}</span>
             </div>
         </div>
 

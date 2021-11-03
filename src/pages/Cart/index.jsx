@@ -72,7 +72,7 @@ function Cart() {
           </div>
         </div>
 
-        <Link to={`/`} className="goBackLink">
+        <Link to={`/catalogo`} className="goBackLink">
           <button id="goBack">Voltar</button>
         </Link>
       </div>
