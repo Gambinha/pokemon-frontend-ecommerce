@@ -10,18 +10,18 @@ function MenuBar() {
     const [userData, setUserData] = useState();
 
     useEffect(() => {
-        // const user_id = localStorage.getItem('x-access-token');
-        // if(user_id) {
-        //     api.get(`/usuario/${user_id}`, {
+        const user_id = localStorage.getItem('x-access-token');
+        if(user_id) {
+            api.get(`/usuario/${user_id}`, {
 
-        //     }).then((response) => {
-        //     console.log(response.data);
-        //     setUserData(response.data);
-        // })
-        // }
-        // else {
-        //     return;
-        // }
+            }).then((response) => {
+            console.log(response.data);
+            setUserData(response.data);
+        })
+        }
+        else {
+            return;
+        }
     }, []);
     
     return(

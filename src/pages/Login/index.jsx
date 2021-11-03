@@ -87,7 +87,7 @@ function Cadastro() {
             return;
         }
 
-        api.post(`/usuario/${emailLogin}/${senhaLogin}`, {
+        api.get(`/usuario/${emailLogin}/${senhaLogin}`, {
         }).then((response) => {
             const id = response.data.id;
             localStorage.setItem('x-access-token', id);
