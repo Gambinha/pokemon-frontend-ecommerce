@@ -49,7 +49,7 @@ function Cadastro() {
         if(senhaCadastro1.length < 8) {
             if(span_cadastro.current) {
                 span_cadastro.current.style.visibility = 'visible';
-                span_cadastro.current.innerHTML =  "*Senha menor que o exigido!";
+                span_cadastro.current.innerHTML =  "*Senha menor que o exigido (8 Dígitos)!";
             }
             return;
         }
@@ -132,6 +132,7 @@ function Cadastro() {
                                 value={senhaCadastro1} 
                                 onChange={ (e) => {setSenhaCadastro1(e.target.value) } }
                         />                        
+                        <span ref={span_cadastro} id="warning-cadastro">Teste</span>
                         <div className="buttons-container">
                             <button id="submit-cadastro" type="submit">
                                 Cadastrar
