@@ -1,0 +1,22 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html, body, #root{
+    height: 100vh;
+    color: var(#6A6180);
+}
+
+body{
+    background-color: var(#6A6180);
+}
+
+body, 
+input, 
+button, 
+textarea{
+    font: 400 1.6rem Poppins;
+    color: var(#6A6180);
+}

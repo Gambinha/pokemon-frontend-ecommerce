@@ -1,0 +1,116 @@
+#pokemon-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    padding: 30px 280px;
+}
+
+#pokemon-container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#pokemon-container #imagem {
+    width: 580px;
+    height: 620px;
+
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+#pokemon-container #imagem img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;
+}
+
+#pokemon-container #infos {
+    padding: 0 60px;
+}
+
+#pokemon-container #infos span {
+    display: block;
+    font-size: 1.3rem;
+    width: 700px;
+}
+
+#pokemon-container #infos #price {
+    width: 300px;
+    padding: 20px;
+    margin-top: 30px;
+
+    border: 1px solid gray;
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#pokemon-container #infos #price input {
+    width: 40px;
+    height: 20px;
+    font-size: 1rem;
+}
+
+
+#pokemon-container #infos #price button {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+
+    border: none;
+    border-radius: 4px;
+
+    background-color: #04D361;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+#pokemon-container #infos #price button:hover {
+    background-color: #04BF58;
+    transition: background 0.2s;
+}
+
+#container a {
+    position: absolute;
+}
+
+#container button#goBack {
+    width: 90px;
+    height: 40px;
+    margin-top: 70px;
+
+    position: absolute;
+
+    border: none;
+    border-radius: 4px;
+
+    background-color: #cf3a30;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+#container button#goBack:hover {
+    background-color: #d64a40;
+    transition: background 0.2s;
+
+}

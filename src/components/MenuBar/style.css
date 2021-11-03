@@ -1,0 +1,45 @@
+#container-menubar {
+    width: 100%;
+    height: 100px;
+    padding: 15px 200px;
+
+    background-color: red;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#container-menubar #logo {
+    width: 500px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#container-menubar #user {
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+#container-menubar #user span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+#container-menubar #carrinho {
+    position: relative;
+    top: 4px;
+
+    border: none;
+    cursor: pointer;
+}
